@@ -10,4 +10,4 @@ RUN apk update && \
     apk add radvd && \
     rm -r /var/cache/
 
-ENTRYPOINT [ "radvd" ]
+ENTRYPOINT [ "radvd", "--nodaemon", "-p", "/radvd.pid" ]
