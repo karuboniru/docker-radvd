@@ -1,4 +1,4 @@
-FROM alpine:3.3
+FROM alpine:3.4
 MAINTAINER Chris Weyl <chris.weyl@dreamhost.com>
 
 RUN apk update && \
