@@ -1,5 +1,5 @@
 FROM alpine:3.4
-MAINTAINER Chris Weyl <chris.weyl@dreamhost.com>
+MAINTAINER Chris Weyl <cweyl@alumni.drew.edu>
 
 RUN apk update && \
     apk add radvd && \
