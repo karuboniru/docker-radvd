@@ -6,8 +6,14 @@ This is an alpine box, so it's fairly small.
 
 # Running
 
-todo, but...  you'll need a config file and to be on the host's network stack,
-at least.
+Something along the lines of:
+
+    docker run --rm \
+        --net=host --cap-add=NET_RAW \
+        -v /etc/radvd/%i.conf:/etc/radvd.conf:ro \
+        quay.io/rsrchboy/radvd -d 2 -m stderr
+
+...substituting `rsrchboy/radvd` if you're in a hub mood :)
 
 # see also
 
