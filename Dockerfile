@@ -1,5 +1,5 @@
-FROM alpine:3.4
-MAINTAINER Chris Weyl <cweyl@alumni.drew.edu>
+FROM alpine:latest
+MAINTAINER Qiyu Yan <nico@niconi.org>
 
 RUN apk update && \
     apk add radvd && \

@@ -11,7 +11,7 @@ Something along the lines of:
     docker run --rm \
         --net=host --cap-add=NET_RAW \
         -v /etc/radvd/%i.conf:/etc/radvd.conf:ro \
-        quay.io/rsrchboy/radvd -d 2 -m stderr
+        docker.io/radvd/radvd -d 2 -m stderr
 
 ...substituting `rsrchboy/radvd` if you're in a hub mood :)
 
